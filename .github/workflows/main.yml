@@ -1,4 +1,4 @@
-name: SpaceX app
+name: Spacex app
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -47,3 +47,5 @@ jobs:
       # Deploy Surge
       - name: Deploy React App to Surge
         run: surge ./build http://spacex-madeel42.surge.sh/ --token ${{ secrets.SURGETOKEN }}
+
+
